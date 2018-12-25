@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER KAMO Yasuhiro <duck1218+github@gmail.com>
+MAINTAINER chr1st1anK <chr1st1ank@krudewig-online.de>
 
 # install minidlna
 RUN apk --no-cache add minidlna

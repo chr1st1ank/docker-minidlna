@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  minidlna:
+    build: 
+        context: ./docker-minidlna
+        dockerfile: Dockerfile
+    image: chr1st1ank/minidlna
+    #command: /bin/true
+    volumes:
+      - "/srv/data/musik:/opt/musik"
+      - "/srv/data/fotos:/opt/fotos"
+    ports:
+      - "8200:8200"
+      - "1900:1900/udp"
+
