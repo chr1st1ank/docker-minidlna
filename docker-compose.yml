@@ -10,6 +10,8 @@ services:
     volumes:
       - "/srv/data/musik:/opt/musik"
       - "/srv/data/fotos:/opt/fotos"
+      - "./cache:/var/cache"
+    network_mode: "host"
     ports:
       - "8200:8200"
       - "1900:1900/udp"
